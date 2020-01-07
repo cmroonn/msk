@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px; }
+
+div, input, button, form, a, span {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 310px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin: auto; }
+
+.wrapper {
+  background: url(../img/bg-mob.jpg) no-repeat #2d5074;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.consult {
+  width: 100%;
+  max-width: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.consult__text {
+  font-weight: 200;
+  font-size: 0.625rem;
+  max-width: 120px;
+  text-align: center;
+  display: block; }
+
+.consult__btn {
+  max-width: 155px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 32px;
+  background: white;
+  border-radius: 15.9px;
+  padding-left: 7px;
+  padding-right: 10px;
+  margin: 12px 0; }
+  .consult__btn img {
+    width: 23px;
+    height: 23px;
+    -webkit-box-shadow: 0px 4px 15px 1px #4ecc31;
+    box-shadow: 0px 4px 15px 1px #4ecc31;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .consult__btn span {
+    color: #323232;
+    font-weight: 800;
+    font-size: 0.750rem; }
+
+.consult__work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .5rem;
+  max-width: 90px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto; }
+  .consult__work:before {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 5px;
+    height: 5px;
+    background: #69eb63;
+    border-radius: 50%;
+    -ms-flex-item-align: center;
+    align-self: center; }
+
+.consult__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+
+.content__title {
+  color: #f8cd89;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.19rem; }
+  .content__title span {
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ffffff), color-stop(70%, #8bacc0));
+    background: -webkit-linear-gradient(top, #ffffff 20%, #8bacc0 70%);
+    background: -o-linear-gradient(top, #ffffff 20%, #8bacc0 70%);
+    background: linear-gradient(180deg, #ffffff 20%, #8bacc0 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white; }
+
+.content__point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.download__heading {
+  font-weight: 800;
+  font-size: 1.125rem;
+  max-width: 235px;
+  line-height: 1.444; }
+  .download__heading span {
+    color: #fad67e;
+    font-size: inherit; }
+
+.download__btn {
+  max-width: 255px;
+  height: 65px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 0; }
+  .download__btn:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: #a08744;
+    width: 255px;
+    height: 65px;
+    border-radius: 30px;
+    z-index: -1; }
+
+.download__btn-wrap {
+  height: 65px;
+  background: #fde29e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 30px;
+  max-width: 255px; }
