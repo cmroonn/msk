@@ -12,59 +12,80 @@
 <body>
     <main class="wrapper">
         <div class="container">
-            <!-- header begin -->
-            <header class="header" id="header">
-                <div class="logo">
-                    <img src="img/logo-mob.png" alt="logo">
-                </div>
+            <div class="main-content">
+                <!-- header begin -->
+                <header class="header" id="header">
+                    <div class="logo">
+                        <img src="img/logo-mob.png" alt="logo" class="logo-mob">
+                        <img src="img/logo.png" alt="logo" class="logo-desk">
+                    </div>
 
-                <div class="consult">
-                    <span class="consult__text">
-                        Консультация эксперта по комплексу
-                    </span>
-                    <div class="consult__content">
-                        <div class="consult__btn" id="callTo">
-                            <img src="img/phone.png" alt="phone">
-                            <span>
-                                8 495 740-99-88
-                            </span>
+                    <div class="location">
+                        <div class="location__city">
+                            <img src="img/mark.png" alt="mark">
+                            <div>
+                                <p>Москва</p>
+                                <span>Главный офис</span>
+                            </div>
                         </div>
 
-                        <div class="consult__work">
-                            сейчас работаем
+                        <div class="location__address">
+                            <p>
+                                Пресненская набережная, 12 <br> башня «Федерация» (Восток)
+                            </p>
                         </div>
                     </div>
-                </div>
-            </header>
-            <!-- header end -->
 
-            <div class="content">
-                <h1 class="content__title">
-                    новые башни «москва сити»
-                    <span>
-                        grand towers
-                    </span>
-                </h1>
+                    <div class="consult">
+                        <span class="consult__text">
+                            Консультация эксперта по комплексу
+                        </span>
+                        <div class="consult__content">
+                            <div class="consult__btn" id="callTo">
+                                <img src="img/phone.png" alt="phone">
+                                <span>
+                                    8 495 740-99-88
+                                </span>
+                            </div>
 
-                <div class="content__point point-1">
-                    <img src="img/point.png" alt="point">
-                    <span>
-                        308 м
-                    </span>
-                </div>
+                            <div class="consult__work">
+                                сейчас работаем
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- header end -->
 
-                <div class="content__point point-2">
-                    <img src="img/point.png" alt="point">
-                    <span>
-                        308 м
-                    </span>
-                </div>
+                <div class="content">
+                    <h1 class="content__title">
+                        новые башни «москва сити»
+                        <span>
+                            grand towers
+                        </span>
+                    </h1>
 
-                <div class="content__point point-3">
-                    <img src="img/point.png" alt="point">
-                    <span>
-                        308 м
-                    </span>
+                    <div class="content__points">
+                        <div class="content__point point-1">
+                            <img src="img/point.png" alt="point">
+                            <span>
+                                308 м
+                            </span>
+                        </div>
+    
+                        <div class="content__point point-2">
+                            <img src="img/point.png" alt="point">
+                            <span>
+                                63 этажа
+                            </span>
+                        </div>
+    
+                        <div class="content__point point-3">
+                            <img src="img/point.png" alt="point">
+                            <span>
+                                1910 машиномест
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -74,18 +95,67 @@
                     новой башни Москва Сити
                 </p>
 
-                <a href="#" class="download__btn" download="grand towers">
+                <a class="download__btn" id="openModal">
                     <div class="download__btn-wrap">
                         Скачать презентацию
                         <span>grand towers</span>
+                        <img src="img/catalog.png" alt="catalog">
                     </div>
                 </a>
             </div>
 
+
+            <img src="img/build.png" alt="build" class="build">
         </div>
 
+        <img src="img/cloud.png" alt="cloud" class="cloud">
+        <img src="img/tree-r.png" alt="tree" class="tree-r">
+        <img src="img/tree-l.png" alt="tree" class="tree-l">
+        <img src="img/building.png" alt="building" class="building-mob">
+
+        <div class="overlay"></div>
+        <div class="modal">
+            <img src="img/cancel.png" alt="close" class="modal-close">
+            <h2>
+                Чтобы получить  презентацию объекта, заполните поля
+            </h2>
+
+            <form method="post">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+
+                <a href="#" class="download__btn btn-modal">
+                    <div class="download__btn-wrap">
+                        Скачать презентацию
+                    </div>
+                </a>
+            </form>
+        </div>
+
+        <div class="thanks">
+            <img src="img/cancel.png" alt="close" class="modal-close">
+            <h2>
+                Спасибо!
+            </h2>
+            
+            <h3>
+                Ваш каталог уже скачивается
+            </h3>
+
+            <p>
+                Для подробной консультации обращайтесь по телефону
+            </p>
+
+            <div class="thanks-phone">
+                <img src="img/phone2.png" alt="phone">
+                8 495 740-99-88
+            </div>
+
+            <img src="img/magazine.png" alt="magazine" class="magazine">
+        </div>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
