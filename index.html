@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta property="og:title" content="Новые башни «Москва Сити» Grand Towers">
+    <meta property="og:site_name" content="Grand Towers">
+    <meta property="og:url" content="http://oshevn2m.beget.tech/msk/">
+    <meta property="og:description" content="Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers Тут будет описание grand towers">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://oshevn2m.beget.tech/msk/img/bg2.jpg">
+
+    <title>Grand Towers</title>
 
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div class="preloader-overlay"></div>
     <main class="wrapper">
         <div class="container">
             <div class="main-content">
                 <!-- header begin -->
                 <header class="header" id="header">
                     <div class="logo">
-                        <img src="img/logo-mob.png" alt="logo" class="logo-mob">
-                        <img src="img/logo.png" alt="logo" class="logo-desk">
+                        <img src="img/logo-mob.svg" alt="logo" class="logo-mob">
+                        <img src="img/logo.svg" alt="logo" class="logo-desk">
                     </div>
 
                     <div class="location">
@@ -43,9 +54,9 @@
                         <div class="consult__content">
                             <div class="consult__btn" id="callTo">
                                 <img src="img/phone.png" alt="phone">
-                                <span>
+                                <a href="tel:+74957409988">
                                     8 495 740-99-88
-                                </span>
+                                </a>
                             </div>
 
                             <div class="consult__work">
@@ -71,14 +82,14 @@
                                 308 м
                             </span>
                         </div>
-    
+
                         <div class="content__point point-2">
                             <img src="img/point.png" alt="point">
                             <span>
                                 63 этажа
                             </span>
                         </div>
-    
+
                         <div class="content__point point-3">
                             <img src="img/point.png" alt="point">
                             <span>
@@ -104,14 +115,14 @@
                 </a>
             </div>
 
-
-            <img src="img/build.png" alt="build" class="build">
+            <img src="img/circle.png" alt="circles" class="circles">
+            <img src="img/buldin.png" alt="build" class="build">
         </div>
 
         <img src="img/cloud.png" alt="cloud" class="cloud">
         <img src="img/tree-r.png" alt="tree" class="tree-r">
         <img src="img/tree-l.png" alt="tree" class="tree-l">
-        <img src="img/building.png" alt="building" class="building-mob">
+        <!-- <img src="img/building.png" alt="building" class="building-mob"> -->
 
         <div class="overlay"></div>
         <div class="modal">
@@ -120,16 +131,21 @@
                 Чтобы получить  презентацию объекта, заполните поля
             </h2>
 
-            <form method="post">
-                <input type="text" placeholder="Ваше имя">
-                <input type="tel" placeholder="Ваш телефон">
+            <form method="post" id="form">
+                <input type="text" placeholder="Ваше имя" name="name" class="inputName" required>
+                <input type="tel" placeholder="Ваш телефон" name="phonenumber" class="inputTel" id="phone-mask" required>
 
-                <a href="#" class="download__btn btn-modal">
+                <button type='submit' id="sender" class="download__btn btn-modal">
                     <div class="download__btn-wrap">
                         Скачать презентацию
                     </div>
-                </a>
+                </button>
+                <div id="result-form">
+
+                </div>
             </form>
+
+            <a id="getDocs" href="docs.jpg" download="Важный документ"></a>
         </div>
 
         <div class="thanks">
@@ -137,7 +153,7 @@
             <h2>
                 Спасибо!
             </h2>
-            
+
             <h3>
                 Ваш каталог уже скачивается
             </h3>
@@ -156,7 +172,7 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
-
